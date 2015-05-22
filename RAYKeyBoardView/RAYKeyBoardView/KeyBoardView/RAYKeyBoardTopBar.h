@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RAYKeyBoardTopBar.h
 //  RAYKeyBoardView
 //
 //  Created by richerpay on 15/5/21.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface ViewController : UIViewController
-
+@interface RAYKeyBoardTopBar : UIView
 
 @end
-

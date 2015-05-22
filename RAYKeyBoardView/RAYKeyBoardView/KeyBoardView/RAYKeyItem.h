@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RAYKeyItem.h
 //  RAYKeyBoardView
 //
 //  Created by richerpay on 15/5/21.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface ViewController : UIViewController
-
+@interface RAYKeyItem : UIView
 
 @end
-
