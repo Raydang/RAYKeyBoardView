@@ -10,16 +10,16 @@
 #import "RAYKeyBoardView.h"
 #import "RAYKeyBoardTopBar.h"
 
-@interface ViewController () <UITextFieldDelegate,RAYKeyBoardViewDelegate>{
+@interface ViewController () <UITextFieldDelegate,RAYKeyBoardViewDelegate, RAYKeyBoardTopBarDelegate>{
 
     RAYKeyBoardView *boardView;
     RAYKeyBoardTopBar *topBar;
-    
 }
 
 @property (nonatomic, strong) UIView        *animationView;
 @property (nonatomic, strong) UIButton      *button;
 @property (nonatomic, strong) UITextField   *textField;
+@property (nonatomic, strong) UITextField   *otherTextField;
 
 @end
 
@@ -34,6 +34,13 @@
 //    self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.view addSubview:self.animationView];
     [self.animationView addSubview:self.button];
+    
+    boardView = [[RAYKeyBoardView alloc]init];
+    topBar    = [[RAYKeyBoardTopBar alloc]init];
+    [topBar setTextFieldsArray:@[self.textField,self.otherTextField]];
+    
+    boardView.delegate = self;
+    topBar.delegate = self;
     
 }
 
@@ -63,14 +70,10 @@
 #pragma mark - delegate
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    
-    boardView = [[RAYKeyBoardView alloc]init];
-    topBar = [[RAYKeyBoardTopBar alloc]init];
 
-    boardView.delegate = self;
-    self.textField.inputView = boardView;
-    self.textField.inputAccessoryView = topBar;
-    
+    [topBar showBar:textField];
+    textField.inputView = boardView;
+    textField.inputAccessoryView = topBar;
     
     [boardView keyBoardViewUp];
     
@@ -81,20 +84,34 @@
     [self.textField resignFirstResponder];
 }
 
-- (void)numberKeySelected:(NSString *)text {
+- (void)keySelected:(NSString *)text {
+    
+    NSString *outText = self.textField.text;
+    
+    if ([text isEqualToString:@"clear"]) {
+        self.textField.text =  [outText substringToIndex:[outText length] -1];
+    }
 
-    self.textField.text = [NSString stringWithFormat:@"%@%@",self.textField.text,text];
-//    self.textField.text = text;
+    else {
+        self.textField.text = [NSString stringWithFormat:@"%@%@",outText,text];
+    }
 }
 
+- (void)hiddenKeyBoard {
+    [self.textField resignFirstResponder];
+}
 
 #pragma mark -
 #pragma mark - event response
 
 - (void) clickButton {
     [self.animationView addSubview:self.textField];
-    self.textField.frame = CGRectMake(10, 20, 300, 40);
+    self.textField.frame = CGRectMake(10, 30, 300, 40);
     self.textField.delegate = self;
+    
+    [self.animationView addSubview:self.otherTextField];
+    self.otherTextField.frame = CGRectMake(10, 90, 300, 40);
+    self.otherTextField.delegate = self;
 }
 
 - (void) oneFingerTwoTaps: (UITapGestureRecognizer*)gesture{
@@ -184,5 +201,16 @@
     }
     return _textField;
 }
+
+- (UITextField *)otherTextField {
+    if (_otherTextField == nil) {
+        _otherTextField = [[UITextField alloc]init];
+        _otherTextField.text = @"ABCD";
+        _otherTextField.font = [UIFont systemFontOfSize: 18];
+        
+    }
+    return _otherTextField;
+}
+
 
 @end

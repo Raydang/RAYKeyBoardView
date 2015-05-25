@@ -14,9 +14,7 @@
 		712ACE181B0D792A0038E0B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712ACE171B0D792A0038E0B0 /* Images.xcassets */; };
 		712ACE1B1B0D792A0038E0B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 712ACE191B0D792A0038E0B0 /* LaunchScreen.xib */; };
 		712ACE271B0D792A0038E0B0 /* RAYKeyBoardViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 712ACE261B0D792A0038E0B0 /* RAYKeyBoardViewTests.m */; };
-		712ACE361B0DA6F80038E0B0 /* RAYKeyBoardBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 712ACE351B0DA6F80038E0B0 /* RAYKeyBoardBackgroundView.m */; };
 		712ACE391B0DA7800038E0B0 /* RAYKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 712ACE381B0DA7800038E0B0 /* RAYKeyBoardView.m */; };
-		712ACE3F1B0DA9610038E0B0 /* RAYKeyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 712ACE3E1B0DA9610038E0B0 /* RAYKeyItem.m */; };
 		712ACE421B0DA9900038E0B0 /* RAYKeyBoardTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 712ACE411B0DA9900038E0B0 /* RAYKeyBoardTopBar.m */; };
 		712ACE7D1B0DDB910038E0B0 /* kb_enter_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 712ACE4F1B0DDB910038E0B0 /* kb_enter_on.png */; };
 		712ACE7E1B0DDB910038E0B0 /* kb_enter_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 712ACE501B0DDB910038E0B0 /* kb_enter_on@2x.png */; };
@@ -90,12 +88,8 @@
 		712ACE201B0D792A0038E0B0 /* RAYKeyBoardViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAYKeyBoardViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		712ACE251B0D792A0038E0B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		712ACE261B0D792A0038E0B0 /* RAYKeyBoardViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAYKeyBoardViewTests.m; sourceTree = "<group>"; };
-		712ACE341B0DA6F80038E0B0 /* RAYKeyBoardBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAYKeyBoardBackgroundView.h; path = KeyBoardView/RAYKeyBoardBackgroundView.h; sourceTree = "<group>"; };
-		712ACE351B0DA6F80038E0B0 /* RAYKeyBoardBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAYKeyBoardBackgroundView.m; path = KeyBoardView/RAYKeyBoardBackgroundView.m; sourceTree = "<group>"; };
 		712ACE371B0DA7800038E0B0 /* RAYKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAYKeyBoardView.h; path = KeyBoardView/RAYKeyBoardView.h; sourceTree = "<group>"; };
 		712ACE381B0DA7800038E0B0 /* RAYKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAYKeyBoardView.m; path = KeyBoardView/RAYKeyBoardView.m; sourceTree = "<group>"; };
-		712ACE3D1B0DA9610038E0B0 /* RAYKeyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAYKeyItem.h; path = KeyBoardView/RAYKeyItem.h; sourceTree = "<group>"; };
-		712ACE3E1B0DA9610038E0B0 /* RAYKeyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAYKeyItem.m; path = KeyBoardView/RAYKeyItem.m; sourceTree = "<group>"; };
 		712ACE401B0DA9900038E0B0 /* RAYKeyBoardTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAYKeyBoardTopBar.h; path = KeyBoardView/RAYKeyBoardTopBar.h; sourceTree = "<group>"; };
 		712ACE411B0DA9900038E0B0 /* RAYKeyBoardTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAYKeyBoardTopBar.m; path = KeyBoardView/RAYKeyBoardTopBar.m; sourceTree = "<group>"; };
 		712ACE441B0DAED20038E0B0 /* Define.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.pch; sourceTree = "<group>"; };
@@ -236,10 +230,6 @@
 			children = (
 				712ACE371B0DA7800038E0B0 /* RAYKeyBoardView.h */,
 				712ACE381B0DA7800038E0B0 /* RAYKeyBoardView.m */,
-				712ACE341B0DA6F80038E0B0 /* RAYKeyBoardBackgroundView.h */,
-				712ACE351B0DA6F80038E0B0 /* RAYKeyBoardBackgroundView.m */,
-				712ACE3D1B0DA9610038E0B0 /* RAYKeyItem.h */,
-				712ACE3E1B0DA9610038E0B0 /* RAYKeyItem.m */,
 				712ACE401B0DA9900038E0B0 /* RAYKeyBoardTopBar.h */,
 				712ACE411B0DA9900038E0B0 /* RAYKeyBoardTopBar.m */,
 			);
@@ -453,8 +443,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				712ACE3F1B0DA9610038E0B0 /* RAYKeyItem.m in Sources */,
-				712ACE361B0DA6F80038E0B0 /* RAYKeyBoardBackgroundView.m in Sources */,
 				712ACE131B0D792A0038E0B0 /* ViewController.m in Sources */,
 				712ACE421B0DA9900038E0B0 /* RAYKeyBoardTopBar.m in Sources */,
 				712ACE391B0DA7800038E0B0 /* RAYKeyBoardView.m in Sources */,

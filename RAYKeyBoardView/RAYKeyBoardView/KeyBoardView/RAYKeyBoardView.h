@@ -7,22 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 typedef  NS_ENUM(NSInteger, RAYKeyBoardMode) {
     
     RAYKeyBoardModeNumber,
     RAYKeyBoardModeLetter,
     RAYKeyBoardModeSymbol,
-
 };
 
 @protocol RAYKeyBoardViewDelegate<NSObject>
 
 - (void)okButtonSelected;
-- (void)numberKeySelected:(NSString *)text;
-
+- (void)keySelected:(NSString *)text;
 
 @end
+
+
+
 
 @interface RAYKeyBoardView : UIView
 
