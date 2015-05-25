@@ -8,6 +8,7 @@
 
 #import "RAYKeyBoardTopBar.h"
 
+
 @interface RAYKeyBoardTopBar (){
     NSArray *textFields;
     UITextField *currentTextField;

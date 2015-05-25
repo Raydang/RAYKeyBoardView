@@ -8,6 +8,7 @@
 
 #import "RAYKeyBoardView.h"
 
+
 @interface RAYKeyBoardView(){
 
     int selectedMode;
