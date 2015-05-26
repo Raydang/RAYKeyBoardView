@@ -14,6 +14,8 @@
 
     RAYKeyBoardView *boardView;
     RAYKeyBoardTopBar *topBar;
+    
+    int selectIndex;
 }
 
 @property (nonatomic, strong) UIView        *animationView;
@@ -67,38 +69,70 @@
 }
 
 #pragma mark -
-#pragma mark - delegate
+#pragma mark - UITextFieldDelegate
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
 
     [topBar showBar:textField];
     textField.inputView = boardView;
     textField.inputAccessoryView = topBar;
-    
+
     [boardView keyBoardViewUp];
+    if (textField == self.textField) {
+        selectIndex = 0;
+    }
+    else {
+        selectIndex = 1;
+    }
+    
     
     return YES;
 }
 
 - (void)okButtonSelected {
-    [self.textField resignFirstResponder];
+    if (selectIndex == 0) {
+        [self.textField resignFirstResponder];
+    }
+    else {
+        [self.otherTextField resignFirstResponder];
+    }
 }
 
 - (void)keySelected:(NSString *)text {
     
-    NSString *outText = self.textField.text;
+    NSString *outText ;
     
-    if ([text isEqualToString:@"clear"]) {
-        self.textField.text =  [outText substringToIndex:[outText length] -1];
+    if (selectIndex == 0) {
+        outText= self.textField.text;
+        
+        if ([text isEqualToString:@"clear"]) {
+            self.textField.text =  [outText substringToIndex:[outText length] -1];
+        }
+        
+        else {
+            self.textField.text = [NSString stringWithFormat:@"%@%@",outText,text];
+        }
     }
-
     else {
-        self.textField.text = [NSString stringWithFormat:@"%@%@",outText,text];
+        outText= self.otherTextField.text;
+        
+        if ([text isEqualToString:@"clear"]) {
+            self.otherTextField.text =  [outText substringToIndex:[outText length] -1];
+        }
+        
+        else {
+            self.otherTextField.text = [NSString stringWithFormat:@"%@%@",outText,text];
+        }
     }
 }
 
 - (void)hiddenKeyBoard {
-    [self.textField resignFirstResponder];
+    if (selectIndex == 0) {
+        [self.textField resignFirstResponder];
+    }
+    else {
+        [self.otherTextField resignFirstResponder];
+    }
 }
 
 #pragma mark -

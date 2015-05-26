@@ -246,8 +246,9 @@
         [keyButton setBackgroundImage:imageOn forState:UIControlStateSelected];
         
         [keyButton addTarget:self action:@selector(clickKey:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:keyButton];
+        [keyButton addTarget:self action:@selector(playSound) forControlEvents:UIControlEventTouchDown];
         
+        [self addSubview:keyButton];
         [keys addObject:keyButton];
     }
     
@@ -352,8 +353,8 @@
     
     [self addSubview:uppercaseButton];
     [keys addObject:uppercaseButton];
-// 清除
     
+    // 清除
     UIButton *clearButton = [UIButton buttonWithType:UIButtonTypeCustom];
     clearButton.frame = CGRectMake(275, 178-61, 42, 39);
     [clearButton setImage:IMAGE(@"kb_zm_icon3.png") forState:UIControlStateNormal];
