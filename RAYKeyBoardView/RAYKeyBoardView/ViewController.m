@@ -109,12 +109,28 @@
     else {
         [self.otherTextField resignFirstResponder];
     }
-    test = [[RAYTestViewController alloc]init];
-    test.view.frame = self.view.bounds;
-//    [self presentViewController:test animated:YES completion:nil];
-    [self.navigationController pushViewController:test animated:YES];
     
+    
+    if ([self.otherTextField.text isEqualToString:@"0000"]) {
+        test = [[RAYTestViewController alloc]init];
+        test.view.frame = self.view.bounds;
+        [self.navigationController pushViewController:test animated:YES];
+    }
+    else {
+        [self showErrorAlertView];
+    }
 }
+
+- (void)showErrorAlertView{
+    UIAlertController* alertController = [UIAlertController alertControllerWithTitle:@"错误❌"
+                                                                              message:@"密码错误，正确密码是 0000"
+                                                                       preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *alertAction){
+    }];
+     [alertController addAction:alertAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
 
 - (void)keySelected:(NSString *)text {
     
@@ -241,6 +257,18 @@
     self.otherTextField.frame = CGRectMake(-280, 320, 280, 40);
     self.otherTextField.delegate = self;
     
+    
+    [UIView animateWithDuration:1
+                          delay:2
+                        options:UIViewAnimationOptionBeginFromCurrentState
+                     animations:^{
+                         self.button.layer.rasterizationScale = 3;
+    }
+                     completion:^(BOOL finish){
+                                                  self.button.layer.rasterizationScale = 1;
+    }];
+    
+    
     [UIView animateWithDuration:.5
                           delay:0
                         options:UIViewAnimationOptionCurveLinear //动画的时间曲线，线性比较合理
@@ -249,7 +277,7 @@
                      }
                      completion:^(BOOL finished) {
                          
-                         [UIView animateWithDuration:0.5
+                         [UIView animateWithDuration:.5
                                                delay:0
                                              options:UIViewAnimationOptionCurveLinear //动画的时间曲线，线性比较合理
                                           animations:^{
@@ -341,7 +369,7 @@
 - (UITextField *)textField {
     if (_textField == nil) {
         _textField = [[UITextField alloc]init];
-        _textField.text = @"    账号";
+        _textField.text = @"    账号 ：";
         _textField.font = [UIFont systemFontOfSize: 18];
         _textField.layer.borderColor = [UIColor grayColor].CGColor;
         _textField.layer.borderWidth = 1;
@@ -354,7 +382,7 @@
 - (UITextField *)otherTextField {
     if (_otherTextField == nil) {
         _otherTextField = [[UITextField alloc]init];
-        _otherTextField.text = @"    密码";
+        _otherTextField.text = @"    密码 ：";
         _otherTextField.font = [UIFont systemFontOfSize: 18];
         _otherTextField.layer.borderColor = [UIColor grayColor].CGColor;
         _otherTextField.layer.borderWidth = 1;
