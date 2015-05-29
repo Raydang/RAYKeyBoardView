@@ -111,7 +111,7 @@
     }
     
     
-    if ([self.otherTextField.text isEqualToString:@"0000"]) {
+    if ([self.otherTextField.text isEqualToString:@"    账号 ：0000"]) {
         test = [[RAYTestViewController alloc]init];
         test.view.frame = self.view.bounds;
         [self.navigationController pushViewController:test animated:YES];
