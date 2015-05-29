@@ -106,7 +106,6 @@
 
 - (void) showBar:(id)textField {
     currentTextField = textField;
-    
     NSInteger num = -1;
 
     for (id txt in textFields) {
@@ -114,7 +113,6 @@
             num = [textFields indexOfObject:txt];
         }
     }
-    
     if (num >0) {
         self.previousItem.enabled = YES;
     }

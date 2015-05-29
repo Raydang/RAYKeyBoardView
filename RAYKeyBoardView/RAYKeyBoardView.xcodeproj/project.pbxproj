@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		712927401B18069D001390D5 /* RAYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7129273F1B18069D001390D5 /* RAYTestViewController.m */; };
 		712ACE0D1B0D792A0038E0B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 712ACE0C1B0D792A0038E0B0 /* main.m */; };
 		712ACE101B0D792A0038E0B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 712ACE0F1B0D792A0038E0B0 /* AppDelegate.m */; };
 		712ACE131B0D792A0038E0B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712ACE121B0D792A0038E0B0 /* ViewController.m */; };
-		712ACE161B0D792A0038E0B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712ACE141B0D792A0038E0B0 /* Main.storyboard */; };
 		712ACE181B0D792A0038E0B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712ACE171B0D792A0038E0B0 /* Images.xcassets */; };
 		712ACE1B1B0D792A0038E0B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 712ACE191B0D792A0038E0B0 /* LaunchScreen.xib */; };
 		712ACE271B0D792A0038E0B0 /* RAYKeyBoardViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 712ACE261B0D792A0038E0B0 /* RAYKeyBoardViewTests.m */; };
@@ -75,6 +75,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7129273E1B18069D001390D5 /* RAYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAYTestViewController.h; sourceTree = "<group>"; };
+		7129273F1B18069D001390D5 /* RAYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAYTestViewController.m; sourceTree = "<group>"; };
 		712ACE071B0D792A0038E0B0 /* KeyBoardView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyBoardView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712ACE0B1B0D792A0038E0B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		712ACE0C1B0D792A0038E0B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,7 +84,6 @@
 		712ACE0F1B0D792A0038E0B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		712ACE111B0D792A0038E0B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		712ACE121B0D792A0038E0B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		712ACE151B0D792A0038E0B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		712ACE171B0D792A0038E0B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		712ACE1A1B0D792A0038E0B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		712ACE201B0D792A0038E0B0 /* RAYKeyBoardViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAYKeyBoardViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,7 +190,8 @@
 				712ACE0F1B0D792A0038E0B0 /* AppDelegate.m */,
 				712ACE111B0D792A0038E0B0 /* ViewController.h */,
 				712ACE121B0D792A0038E0B0 /* ViewController.m */,
-				712ACE141B0D792A0038E0B0 /* Main.storyboard */,
+				7129273E1B18069D001390D5 /* RAYTestViewController.h */,
+				7129273F1B18069D001390D5 /* RAYTestViewController.m */,
 				712ACE171B0D792A0038E0B0 /* Images.xcassets */,
 				712ACE191B0D792A0038E0B0 /* LaunchScreen.xib */,
 				712ACE0A1B0D792A0038E0B0 /* Supporting Files */,
@@ -398,7 +400,6 @@
 				712ACEA21B0DDB910038E0B0 /* kb_zm_bg_on@2x.png in Resources */,
 				712ACEAA1B0DDB910038E0B0 /* kb_zm_icon3@2x.png in Resources */,
 				712ACE851B0DDB910038E0B0 /* kb_fh_bg_on.png in Resources */,
-				712ACE161B0D792A0038E0B0 /* Main.storyboard in Resources */,
 				712ACEA31B0DDB910038E0B0 /* kb_zm_bg.png in Resources */,
 				712ACE8E1B0DDB910038E0B0 /* kb_nav_bg2_on@2x.png in Resources */,
 				712ACE1B1B0D792A0038E0B0 /* LaunchScreen.xib in Resources */,
@@ -444,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				712ACE131B0D792A0038E0B0 /* ViewController.m in Sources */,
+				712927401B18069D001390D5 /* RAYTestViewController.m in Sources */,
 				712ACE421B0DA9900038E0B0 /* RAYKeyBoardTopBar.m in Sources */,
 				712ACE391B0DA7800038E0B0 /* RAYKeyBoardView.m in Sources */,
 				712ACE101B0D792A0038E0B0 /* AppDelegate.m in Sources */,
@@ -470,14 +472,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		712ACE141B0D792A0038E0B0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				712ACE151B0D792A0038E0B0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		712ACE191B0D792A0038E0B0 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
