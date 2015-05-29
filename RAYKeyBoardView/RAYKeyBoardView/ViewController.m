@@ -53,7 +53,7 @@
     self.animationView.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, [UIScreen mainScreen].bounds.size.height/2);
     
     self.button.bounds = CGRectMake(0 , 0, 80, 80);
-    self.button.center = CGPointMake(self.animationView.bounds.size.width/2, self.animationView.bounds.size.height);
+    self.button.center = CGPointMake(self.animationView.bounds.size.width/2, self.animationView.bounds.size.height-40);
     self.button.layer.masksToBounds = YES;
     self.button.layer.cornerRadius = 40;
     
@@ -167,9 +167,9 @@
 -(void)startAnimation {
     [UIView animateWithDuration:8.0
                           delay:0
-                        options://UIViewAnimationOptionRepeat //动画重复的主开关
-     //     |UIViewAnimationOptionAutoreverse //动画重复自动反向，需要和上面这个一起用
-     UIViewAnimationOptionCurveLinear //动画的时间曲线，滚动字幕线性比较合理
+                        options:UIViewAnimationOptionRepeat //动画重复的主开关
+          |UIViewAnimationOptionAutoreverse //动画重复自动反向，需要和上面这个一起用
+     |UIViewAnimationOptionCurveLinear //动画的时间曲线，滚动字幕线性比较合理
                      animations:^{
                         self.button.center = CGPointMake(self.animationView.bounds.size.width/2, 40);
                         self.button.backgroundColor = [UIColor darkGrayColor];

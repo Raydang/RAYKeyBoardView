@@ -75,7 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		712ACE071B0D792A0038E0B0 /* RAYKeyBoardView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAYKeyBoardView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		712ACE071B0D792A0038E0B0 /* KeyBoardView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyBoardView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712ACE0B1B0D792A0038E0B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		712ACE0C1B0D792A0038E0B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		712ACE0E1B0D792A0038E0B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 		712ACE081B0D792A0038E0B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				712ACE071B0D792A0038E0B0 /* RAYKeyBoardView.app */,
+				712ACE071B0D792A0038E0B0 /* KeyBoardView.app */,
 				712ACE201B0D792A0038E0B0 /* RAYKeyBoardViewTests.xctest */,
 			);
 			name = Products;
@@ -314,7 +314,7 @@
 			);
 			name = RAYKeyBoardView;
 			productName = RAYKeyBoardView;
-			productReference = 712ACE071B0D792A0038E0B0 /* RAYKeyBoardView.app */;
+			productReference = 712ACE071B0D792A0038E0B0 /* KeyBoardView.app */;
 			productType = "com.apple.product-type.application";
 		};
 		712ACE1F1B0D792A0038E0B0 /* RAYKeyBoardViewTests */ = {
@@ -577,7 +577,7 @@
 				GCC_PREFIX_HEADER = RAYKeyBoardView/Define.pch;
 				INFOPLIST_FILE = RAYKeyBoardView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KeyBoardView;
 			};
 			name = Debug;
 		};
@@ -589,7 +589,7 @@
 				GCC_PREFIX_HEADER = RAYKeyBoardView/Define.pch;
 				INFOPLIST_FILE = RAYKeyBoardView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KeyBoardView;
 			};
 			name = Release;
 		};
