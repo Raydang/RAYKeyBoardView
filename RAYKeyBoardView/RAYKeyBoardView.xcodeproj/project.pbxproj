@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		712927401B18069D001390D5 /* RAYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7129273F1B18069D001390D5 /* RAYTestViewController.m */; };
+		712927421B184785001390D5 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 712927411B184785001390D5 /* logo.png */; };
 		712ACE0D1B0D792A0038E0B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 712ACE0C1B0D792A0038E0B0 /* main.m */; };
 		712ACE101B0D792A0038E0B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 712ACE0F1B0D792A0038E0B0 /* AppDelegate.m */; };
 		712ACE131B0D792A0038E0B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712ACE121B0D792A0038E0B0 /* ViewController.m */; };
@@ -77,6 +78,7 @@
 /* Begin PBXFileReference section */
 		7129273E1B18069D001390D5 /* RAYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAYTestViewController.h; sourceTree = "<group>"; };
 		7129273F1B18069D001390D5 /* RAYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAYTestViewController.m; sourceTree = "<group>"; };
+		712927411B184785001390D5 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		712ACE071B0D792A0038E0B0 /* KeyBoardView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyBoardView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712ACE0B1B0D792A0038E0B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		712ACE0C1B0D792A0038E0B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 		712ACE0A1B0D792A0038E0B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				712927411B184785001390D5 /* logo.png */,
 				712ACE0B1B0D792A0038E0B0 /* Info.plist */,
 				712ACE0C1B0D792A0038E0B0 /* main.m */,
 				712ACE441B0DAED20038E0B0 /* Define.pch */,
@@ -417,6 +420,7 @@
 				712ACE801B0DDB910038E0B0 /* kb_enter@2x.png in Resources */,
 				712ACE8F1B0DDB910038E0B0 /* kb_nav_bg2.png in Resources */,
 				712ACEA71B0DDB910038E0B0 /* kb_zm_icon2.png in Resources */,
+				712927421B184785001390D5 /* logo.png in Resources */,
 				712ACE861B0DDB910038E0B0 /* kb_fh_bg_on@2x.png in Resources */,
 				712ACE9C1B0DDB910038E0B0 /* kb_sz_bg@2x.png in Resources */,
 				712ACEA11B0DDB910038E0B0 /* kb_zm_bg_on.png in Resources */,
